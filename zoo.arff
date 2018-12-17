@@ -1,0 +1,123 @@
+@relation zoo
+
+@attribute animal_name {aardvark,antelope,bass,bear,boar,buffalo,calf,carp,catfish,cavy,cheetah,chicken,chub,clam,crab,crayfish,crow,deer,dogfish,dolphin,dove,duck,elephant,flamingo,flea,frog,fruitbat,giraffe,girl,gnat,goat,gorilla,gull,haddock,hamster,hare,hawk,herring,honeybee,housefly,kiwi,ladybird,lark,leopard,lion,lobster,lynx,mink,mole,mongoose,moth,newt,octopus,opossum,oryx,ostrich,parakeet,penguin,pheasant,pike,piranha,pitviper,platypus,polecat,pony,porpoise,puma,pussycat,raccoon,reindeer,rhea,scorpion,seahorse,seal,sealion,seasnake,seawasp,skimmer,skua,slowworm,slug,sole,sparrow,squirrel,starfish,stingray,swan,termite,toad,tortoise,tuatara,tuna,vampire,vole,vulture,wallaby,wasp,wolf,worm,wren}
+@attribute hair {0,1}
+@attribute feathers {0,1}
+@attribute eggs {0,1}
+@attribute milk {0,1}
+@attribute airborne {0,1}
+@attribute aquatic {0,1}
+@attribute predator {0,1}
+@attribute toothed {0,1}
+@attribute backbone {0,1}
+@attribute breathes {0,1}
+@attribute venomous {0,1}
+@attribute fins {0,1}
+@attribute legs {0,2,4,5,6,8}
+@attribute tail {0,1}
+@attribute domestic {0,1}
+@attribute catsize {0,1}
+@attribute type {Mammals,Fish,Birds,Mollusca,Insects,Amphibians,Reptiles}
+
+@data
+aardvark,1,0,0,1,0,0,1,1,1,1,0,0,4,0,0,1,Mammals
+antelope,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,Mammals
+bass,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,Fish
+bear,1,0,0,1,0,0,1,1,1,1,0,0,4,0,0,1,Mammals
+boar,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+buffalo,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,Mammals
+calf,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,Mammals
+carp,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,Fish
+catfish,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,Fish
+cavy,1,0,0,1,0,0,0,1,1,1,0,0,4,0,1,0,Mammals
+cheetah,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+chicken,0,1,1,0,1,0,0,0,1,1,0,0,2,1,1,0,Birds
+chub,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,Fish
+clam,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,Mollusca
+crab,0,0,1,0,0,1,1,0,0,0,0,0,4,0,0,0,Mollusca
+crayfish,0,0,1,0,0,1,1,0,0,0,0,0,6,0,0,0,Mollusca
+crow,0,1,1,0,1,0,1,0,1,1,0,0,2,1,0,0,Birds
+deer,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,Mammals
+dogfish,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,1,Fish
+dolphin,0,0,0,1,0,1,1,1,1,1,0,1,0,1,0,1,Mammals
+dove,0,1,1,0,1,0,0,0,1,1,0,0,2,1,1,0,Birds
+duck,0,1,1,0,1,1,0,0,1,1,0,0,2,1,0,0,Birds
+elephant,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,Mammals
+flamingo,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,1,Birds
+flea,0,0,1,0,0,0,0,0,0,1,0,0,6,0,0,0,Insects
+frog,0,0,1,0,0,1,1,1,1,1,0,0,4,0,0,0,Amphibians
+frog,0,0,1,0,0,1,1,1,1,1,1,0,4,0,0,0,Amphibians
+fruitbat,1,0,0,1,1,0,0,1,1,1,0,0,2,1,0,0,Mammals
+giraffe,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,Mammals
+girl,1,0,0,1,0,0,1,1,1,1,0,0,2,0,1,1,Mammals
+gnat,0,0,1,0,1,0,0,0,0,1,0,0,6,0,0,0,Insects
+goat,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,Mammals
+gorilla,1,0,0,1,0,0,0,1,1,1,0,0,2,0,0,1,Mammals
+gull,0,1,1,0,1,1,1,0,1,1,0,0,2,1,0,0,Birds
+haddock,0,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,Fish
+hamster,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,0,Mammals
+hare,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,0,Mammals
+hawk,0,1,1,0,1,0,1,0,1,1,0,0,2,1,0,0,Birds
+herring,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,Fish
+honeybee,1,0,1,0,1,0,0,0,0,1,1,0,6,0,1,0,Insects
+housefly,1,0,1,0,1,0,0,0,0,1,0,0,6,0,0,0,Insects
+kiwi,0,1,1,0,0,0,1,0,1,1,0,0,2,1,0,0,Birds
+ladybird,0,0,1,0,1,0,1,0,0,1,0,0,6,0,0,0,Insects
+lark,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,Birds
+leopard,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+lion,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+lobster,0,0,1,0,0,1,1,0,0,0,0,0,6,0,0,0,Mollusca
+lynx,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+mink,1,0,0,1,0,1,1,1,1,1,0,0,4,1,0,1,Mammals
+mole,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,0,Mammals
+mongoose,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+moth,1,0,1,0,1,0,0,0,0,1,0,0,6,0,0,0,Insects
+newt,0,0,1,0,0,1,1,1,1,1,0,0,4,1,0,0,Amphibians
+octopus,0,0,1,0,0,1,1,0,0,0,0,0,8,0,0,1,Mollusca
+opossum,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,0,Mammals
+oryx,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,Mammals
+ostrich,0,1,1,0,0,0,0,0,1,1,0,0,2,1,0,1,Birds
+parakeet,0,1,1,0,1,0,0,0,1,1,0,0,2,1,1,0,Birds
+penguin,0,1,1,0,0,1,1,0,1,1,0,0,2,1,0,1,Birds
+pheasant,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,Birds
+pike,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,1,Fish
+piranha,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,Fish
+pitviper,0,0,1,0,0,0,1,1,1,1,1,0,0,1,0,0,Reptiles
+platypus,1,0,1,1,0,1,1,0,1,1,0,0,4,1,0,1,Mammals
+polecat,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+pony,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,Mammals
+porpoise,0,0,0,1,0,1,1,1,1,1,0,1,0,1,0,1,Mammals
+puma,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+pussycat,1,0,0,1,0,0,1,1,1,1,0,0,4,1,1,1,Mammals
+raccoon,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+reindeer,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,Mammals
+rhea,0,1,1,0,0,0,1,0,1,1,0,0,2,1,0,1,Birds
+scorpion,0,0,0,0,0,0,1,0,0,1,1,0,8,1,0,0,Mollusca
+seahorse,0,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,Fish
+seal,1,0,0,1,0,1,1,1,1,1,0,1,0,0,0,1,Mammals
+sealion,1,0,0,1,0,1,1,1,1,1,0,1,2,1,0,1,Mammals
+seasnake,0,0,0,0,0,1,1,1,1,0,1,0,0,1,0,0,Reptiles
+seawasp,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,Mollusca
+skimmer,0,1,1,0,1,1,1,0,1,1,0,0,2,1,0,0,Birds
+skua,0,1,1,0,1,1,1,0,1,1,0,0,2,1,0,0,Birds
+slowworm,0,0,1,0,0,0,1,1,1,1,0,0,0,1,0,0,Reptiles
+slug,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,Mollusca
+sole,0,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,Fish
+sparrow,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,Birds
+squirrel,1,0,0,1,0,0,0,1,1,1,0,0,2,1,0,0,Mammals
+starfish,0,0,1,0,0,1,1,0,0,0,0,0,5,0,0,0,Mollusca
+stingray,0,0,1,0,0,1,1,1,1,0,1,1,0,1,0,1,Fish
+swan,0,1,1,0,1,1,0,0,1,1,0,0,2,1,0,1,Birds
+termite,0,0,1,0,0,0,0,0,0,1,0,0,6,0,0,0,Insects
+toad,0,0,1,0,0,1,0,1,1,1,0,0,4,0,0,0,Amphibians
+tortoise,0,0,1,0,0,0,0,0,1,1,0,0,4,1,0,1,Reptiles
+tuatara,0,0,1,0,0,0,1,1,1,1,0,0,4,1,0,0,Reptiles
+tuna,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,1,Fish
+vampire,1,0,0,1,1,0,0,1,1,1,0,0,2,1,0,0,Mammals
+vole,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,0,Mammals
+vulture,0,1,1,0,1,0,1,0,1,1,0,0,2,1,0,1,Birds
+wallaby,1,0,0,1,0,0,0,1,1,1,0,0,2,1,0,1,Mammals
+wasp,1,0,1,0,1,0,0,0,0,1,1,0,6,0,0,0,Insects
+wolf,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,Mammals
+worm,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,Mollusca
+wren,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,Birds
